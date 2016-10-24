@@ -1,0 +1,17 @@
+[version]
+signature="$CHICAGO$"
+AdvancedINF=2.0
+
+[Add.Code]
+ProxyWidgetSetup.msi=ProxyWidgetSetup.msi
+
+[ProxyWidgetSetup.msi]
+file-win32-x86=thiscab
+clsid={0AFCC300-D606-4CEE-A4CF-0DCF4A3A9475}
+FileVersion=1,0,0,0
+
+[Setup Hooks]
+install=install
+
+[RunSetup]
+run=msiexec.exe /package """%EXTRACT_DIR%\ProxyWidgetSetup.msi""" /qn

@@ -1,0 +1,6 @@
+.Set DiskDirectoryTemplate=cab
+.Set CabinetNameTemplate=ProxyWidgetActiveX.cab
+.Set InfFileName=NUL
+.Set RptFileName=NUL
+Release\ProxyWidgetSetup.msi
+ProxyWidgetActiveX.inf

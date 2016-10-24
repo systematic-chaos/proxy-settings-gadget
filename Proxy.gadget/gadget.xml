@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<gadget>
+	<name>Proxy Gadget</name>
+	<version>1.0.0.0</version>
+	<author name="Systematic Chaos">
+		<info url="systematic-chaos.github.com" />
+		<logo src="images/logo.png" />
+	</author>
+	<copyright>&#169; Ka-tet Corp.</copyright>
+	<description>Sidebar gadget for quickly adjusting proxy settings.</description>
+	<icons>
+		<icon height="48" width="48" src="images/icon.png" />
+	</icons>
+	<hosts>
+		<host name="sidebar">
+			<base type="HTML" apiVersion="1.0.0" src="proxy.html" />
+			<permissions>Full</permissions>
+			<platform minPlatformVersion="1.0" />
+			<defaultImage src="images/icon.png" />
+			<autoscaleDPI>false</autoscaleDPI>
+		</host>
+	</hosts>
+</gadget>

@@ -1,0 +1,23 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Proxy Settings Widget ActiveX webpage</title>
+	</head>
+	<body>
+		<object id="ProxyActiveX" classid="clsid:FADE2BEA-C64B-40B5-9CFA-2A37A36AF6A0" codebase="ProxyWidgetActiveX.cab">
+		</object>
+
+		<script type="text/javascript">
+			try {
+				var obj = document.ProxyActiveX;
+				if (obj) {
+					alert("Proxy is " + obj.IsProxyEnabled() ? "enabled" : "disabled");
+				} else {
+					alert("ActiveX Control object is not created!");
+				}
+			} catch (ex) {
+					alert("Some error happens, error message is: " + ex.Description);
+			}
+		</script>
+	</body>
+</html>

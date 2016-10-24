@@ -1,0 +1,51 @@
+<html>
+  
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=Unicode" />
+    <style type="text/css">
+        body {
+            margin: 0;
+            width: 230px;
+            height: 300px;
+        }
+        input,textarea {
+            font-family: arial;
+            font-size: 12px;
+        }
+    </style>
+    <script type="text/jscript" language="jscript" src="settings.js"></script>
+  </head>
+  
+  <body onload="ShowSettings()">
+    <div>
+      <div>
+        <label>Proxy address:</label>
+          <br/>
+          <input type="text" id="address" size="38">
+      </div>
+      <br/>
+      <div>
+        <label>Exceptions:</label>
+        <br/>
+        <textarea id="exceptions" cols="40" rows="4"></textarea>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <label><input type="checkbox" id="authentication" onclick="authenticate(this.checked)" checked="true">Authenticate</label>
+      <br/><br/>
+      <div>
+        <label>User name: </label>
+        <br/>
+        <input type="text" id="user" size="32">
+      </div>
+      <br/>
+      <div>
+        <label>User password: </label>
+        <br/>
+        <input type="password" id="pass" size="32">
+      </div>
+    </div>
+  </body>
+  
+</html>

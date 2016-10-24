@@ -1,0 +1,40 @@
+<html>
+  
+  <head>
+  	<meta http-equiv="Content-Type" content="text/html; charset=Unicode" />
+  	<title>Proxy Settings</title>
+  	<style type="text/css">
+    	body {
+    	 margin: 0;
+    	 width: 130px;
+    	 height: 100px;
+    	 font-family: verdana;
+    	 font-size: 11px;
+    	 font-color: blue;
+      }
+      #gadgetContent {
+        margin-top: 20px;
+        width: 130px;
+        vertical-align: middle;
+        text-align: center;
+        overflow: hidden;
+      }
+  	</style>
+  	<script type="text/jscript" language="jscript">
+  		// Enable the gadget settings functionality
+  		System.Gadget.settingsUI = "settings.html";
+  	</script>
+    <object id="ProxyActiveX" classid="clsid:FADE2BEA-C64B-40B5-9CFA-2A37A36AF6A0" codebase="ProxyWidgetActiveX.cab">
+    </object>
+    <script type="text/jscript" language="jscript" src="proxy.js"></script>
+  </head>
+  
+  <body onload="initializeProxyWidget()">
+    	<div id="gadgetContent">
+        <span>Proxy Settings</span>
+        <br/><br/><br/>
+        <label><input type="checkbox" id="cboxEnableProxy" onclick="enableProxy(this.checked)">Enable Proxy</label>
+    	</div>
+  </body>
+  
+</html>

@@ -1,0 +1,19 @@
+;*** BEGIN **********************************************************
+;**                                                                **
+;** Automatically generated on: Tue Oct 11 18:45:23 2016           **
+;**                                                                **
+;** MakeCAB Version: 6.1.7600.16385                                 **
+;**                                                                **
+;*** BEGIN **********************************************************
+[disk list]
+1,Disk 1
+[cabinet list]
+1,1,ProxyWidgetActiveX.cab
+[file list]
+1,1,ProxyWidgetSetup.msi,954880
+1,1,ProxyWidgetActiveX.inf,166
+;*** END ************************************************************
+;**                                                                **
+;** Automatically generated on: Tue Oct 11 18:45:23 2016           **
+;**                                                                **
+;*** END ************************************************************
